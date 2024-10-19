@@ -33,14 +33,23 @@ body {
 
 .happy-woman-day {
   color: white;
-  font-size: 50px;
+  font-size: 8vw; /* Responsive font size */
   position: fixed;
   top: 80px;
+  text-align: center;
 }
 
 .flowers {
   position: relative;
   transform: scale(0.9);
+}
+
+/* Media Query for small screens */
+@media (max-width: 600px) {
+  .happy-woman-day {
+    font-size: 6vw; /* Decrease font size on smaller screens */
+    top: 60px; /* Adjust top spacing */
+  }
 }
 
 .flower {
